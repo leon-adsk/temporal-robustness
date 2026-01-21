@@ -8,6 +8,7 @@ from rich.console import Console
 
 import reproduction
 import temporal
+import imgconversion
 
 DATASETS_DIR = Path("datasets")
 REPRO_DATASET_DIR = DATASETS_DIR / "malimg_paper_dataset_imgs"
@@ -51,10 +52,7 @@ def check_dataset(experiment_id: int):
         return True
 
 def convert_images():
-    # Placeholder for image conversion logic
-    # Check if conversion output dir exists, if not run conversion
-    print("[dim]Checking image conversion requirements...[/dim]")
-    # Implementation pending
+    imgconversion.convert(MALWARE_DATASET_DIR)
 
 def run_experiment(experiment_name: str):
     print(f"[bold green]Starting experiment: {experiment_name}[/bold green]")
