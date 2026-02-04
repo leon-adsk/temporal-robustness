@@ -62,6 +62,7 @@ def pe_to_img(bin_path: Path, img_path: Path) -> tuple[int, int]:
     return (width, height)
 
 def convert(dataset_dir):
+    print("beginning conversion of PE samples to PNG images - this process may take several minutes, do not interrupt")
     samples_dir = dataset_dir / 'samples'
 
     imgs_dir = dataset_dir / 'images'

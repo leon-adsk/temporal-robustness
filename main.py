@@ -52,6 +52,9 @@ def check_dataset(experiment_id: int):
         return True
 
 def convert_images():
+    if (MALWARE_DATASET_DIR / 'images').exists():
+        print("images directory already exists, skipping PE to PNG conversion")
+        return
     imgconversion.convert(MALWARE_DATASET_DIR)
 
 def run_experiment(experiment_name: str):
