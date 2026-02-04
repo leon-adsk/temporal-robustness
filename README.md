@@ -5,7 +5,7 @@
 
 [![DOI](https://zenodo.org/badge/1138221786.svg)](https://doi.org/10.5281/zenodo.18485927)
 
-# Testing Temporal Robustness in Malware Image Detection
+# Visualization-Based Automated Malware Classification: A Replication Study Extended with Temporal Dependencies
 
 Reliably and robustly detecting malware is a critical cornerstone of security.
 Superseding earlier, e.g., signature-based approaches, AI-based ones are now increasingly prevalent in this domain. 
@@ -23,6 +23,3 @@ This repository contains two major parts:
 2. Visualization: The Jupyter Notebooks used to generate the graphs seen in the paper.
 
 To begin the reproduction process make sure *uv* is installed and run `uv run main.py`. All dependencies will be installed for you, except for the datasets. You will be guided through dataset installation and image generation and asked to choose which experiments you would like to reproduce.
-
-## Legal
-[TODO: add disclaimers]
