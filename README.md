@@ -1,7 +1,6 @@
 <p align="center">
 <img width="300" height="300" alt="17" src="https://github.com/user-attachments/assets/2996f973-d7da-4252-996e-a35855098647" />
 <img width="300" height="300" alt="30" src="https://github.com/user-attachments/assets/6d262dbd-355e-4e82-b9de-b188cc5303d7" />
-<img width="300" height="300" alt="34" src="https://github.com/user-attachments/assets/71e4527c-b5e9-4b8c-acad-63d635c88ec8" />
 </p>
 
 # Testing Temporal Robustness in Malware Image Detection
