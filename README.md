@@ -3,7 +3,7 @@
 <img width="300" height="300" alt="30" src="https://github.com/user-attachments/assets/6d262dbd-355e-4e82-b9de-b188cc5303d7" />
 </p>
 
-# Visualization-Based Automated Malware Classification: A Replication Study Extended with Temporal Dependencies
+# Visualization-Based Automated Malware Classification: A Replication Study Transcended Towards Malware Detection
 
 Reliably and robustly detecting malware is a critical cornerstone of security.
 Superseding earlier, e.g., signature-based approaches, AI-based ones are now increasingly prevalent in this domain. 
