@@ -19,7 +19,7 @@ MALWARE_URL = "https://practicalsecurityanalytics.com/pe-malware-machine-learnin
 
 EXPERIMENTS = {
     1: "Reproduction",
-    2: "Temporal Baseline",
+    2: "Detection Baseline",
     3: "Forward",
     4: "Backward",
 }
@@ -66,13 +66,13 @@ def run_experiment(experiment_name: str):
     results_dir = Path("./results")
     results_dir.mkdir(parents=True, exist_ok=True)
 
-    if experiment_name == "Reproduction":
+    if experiment_name == EXPERIMENTS[1]:
         reproduction.run_reproduction(results_dir=results_dir, dataset=REPRO_DATASET_DIR, epochs=epochs, lr=lr, runs=runs)
-    elif experiment_name == "Temporal Baseline":
+    elif experiment_name == EXPERIMENTS[2]:
         temporal.run_temporal(results_dir=results_dir, dataset=REPRO_DATASET_DIR, epochs=epochs, lr=lr, runs=runs, experiment=temporal.Experiment.BASELINE)
-    elif experiment_name == "Forward":
+    elif experiment_name == EXPERIMENTS[3]:
         temporal.run_temporal(results_dir=results_dir, dataset=REPRO_DATASET_DIR, epochs=epochs, lr=lr, runs=runs, experiment=temporal.Experiment.FORWARD)
-    elif experiment_name == "Backward":
+    elif experiment_name == EXPERIMENTS[4]:
         temporal.run_temporal(results_dir=results_dir, dataset=REPRO_DATASET_DIR, epochs=epochs, lr=lr, runs=runs, experiment=temporal.Experiment.BACKWARD)
     else:
         print("Invalid Experiment")

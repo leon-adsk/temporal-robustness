@@ -5,7 +5,7 @@
 
 # Visualization-Based Automated Malware Classification: A Replication Study Transcended Towards Malware Detection
 
-Reliably and robustly detecting malware is a critical cornerstone of security.
+**Abstract:** Reliably and robustly detecting malware is a critical cornerstone of security.
 Superseding earlier, e.g., signature-based approaches, AI-based ones are now increasingly prevalent in this domain. 
 One concept which has -- due to its inherent resilience against common obfuscation techniques -- recently gained in popularity is the classification of malware through Convolutional Neural Networks (CNNs) operating on two-dimensional visualizations of binaries. While this approach demonstrated promising results in previous research, existing evaluations chronically overlook the impacts of temporality such as concept drift -- the performance degradation which occurs with a shift in the inferred data departing it from older training data.
 
