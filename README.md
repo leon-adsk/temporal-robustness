@@ -1,21 +1,38 @@
 <p align="center">
 <img width="300" height="300" alt="17" src="https://github.com/user-attachments/assets/2996f973-d7da-4252-996e-a35855098647" />
 <img width="300" height="300" alt="30" src="https://github.com/user-attachments/assets/6d262dbd-355e-4e82-b9de-b188cc5303d7" />
-</p>
+</p> 
 
 # Visualization-Based Automated Malware Classification: A Replication Study Transcended Towards Malware Detection
 
-**Abstract:** Reliably and robustly detecting malware is a critical cornerstone of security.
-Superseding earlier, e.g., signature-based approaches, AI-based ones are now increasingly prevalent in this domain. 
-One concept which has -- due to its inherent resilience against common obfuscation techniques -- recently gained in popularity is the classification of malware through Convolutional Neural Networks (CNNs) operating on two-dimensional visualizations of binaries. While this approach demonstrated promising results in previous research, existing evaluations chronically overlook the impacts of temporality such as concept drift -- the performance degradation which occurs with a shift in the inferred data departing it from older training data.
+**Abstract:** TBA
 
-To close this gap, we herein first reproduce a state-of-the-art CNN architecture for visualization-based malware classification. To confirm the approach's efficacy and establish a performance baseline, we extend it to fit another established dataset comprising malware and benign software covering two years overall. On that basis, we then evaluate how strongly the model is affected by temporal dependencies between train and test samples in two directions, thus training on old and testing on new samples and vice versa. 
+## Quick-Start
 
-We find that concept drift causes a statistically significant degradation in malware classification performance in the considered state-of-the-art approach. Notably, this concept drift also arises in backward order when classifying older samples through a model trained on more recent ones. Insofar, the previously reported promising results of the approach need to be taken with care.
+To get this running, you only need one tool: **[uv](https://github.com/astral-sh/uv)**.
 
-We provide this repository to allow for easy reproduction of our results.
+Make sure `uv` is installed on your machine. `uv` locks the specific Python version and installs all required modules automatically when you run the script.
 
-## Instructions
-The code needed to train and validate both our model as well as the reproduction of Pant and Bista's model. This is split into four distinct experiments: `reproduction`, `detection baseline`, `forward`, `backward`.
+### Running the Experiments
 
-To begin the reproduction process make sure *uv* is installed and run `uv run main.py`. All dependencies will be installed for you, except for the datasets. You will be guided through dataset installation and image generation and asked to choose which experiments you would like to reproduce.
+Once you have `uv`, just run:
+
+```bash
+uv run main.py
+```
+
+This launches an interactive selector. The script will simply ask you which of the four experiments you want to reproduce:
+
+- `reproduction`
+- `detection baseline`
+- `forward`
+- `backward`
+
+If you don't have the datasets set up yet, the script detects that. It will guide you through the process of downloading the raw data and converting it into the format required for the models.
+
+## Datasets
+
+Here are the links to the two datasets used in this study:
+
+- [**Malimg**](https://www.dropbox.com/scl/fi/wdb6omeiu2lg796qvt9l7/malimg_dataset.zip?rlkey=63q2xqmtlm66gilf6idd2c9k7&e=2&dl=0)
+- [**PE Malware**](https://practicalsecurityanalytics.com/pe-malware-machine-learning-dataset/)
