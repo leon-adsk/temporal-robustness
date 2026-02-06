@@ -5,7 +5,11 @@
 
 # Visualization-Based Automated Malware Classification: A Replication Study Transcended Towards Malware Detection
 
-**Abstract:** TBA
+**Abstract:** Reliably and robustly detecting and classifying malware is a critical cornerstone of security, with AI-based approaches becoming increasingly prevalent. Proposed concepts particularly include the classification of malware through Convolutional Neural Networks (CNNs) operating on two-dimensional visualizations of binaries. As this approach exhibited outstanding results when classifying between malware families, it stands to reason to also employ it for the binary classification between malware and benign samples to perform malware detection. However, in contrast to malware family classification, the detection is subject to concept drift, which might lead to decreasing performance over time. 
+
+Hence, to explore the transferability of visualization-based approaches from malware classification towards binary malware detection, we herein first reproduce a state-of-the-art CNN architecture for classifying malware families. After validation, we transcend the approach towards a binary classification task on another established dataset comprising malware and benign software covering two years overall. On that basis, we then evaluate how strongly the model is affected by temporal dependencies between train and test samples in two directions, thus training on old and testing on new samples and vice versa. 
+
+We find that while the classification model can be reproduced and at first glance also suits detection, concept drift causes a significant degradation in malware detection performance. In particular, this concept drift also affects performance in backward order when classifying older samples through a model trained on more recent ones. Insofar, the visualization-based classification approach cannot be transferred to malware detection tasks without further adjustment.
 
 ## Quick-Start
 
