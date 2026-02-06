@@ -3,8 +3,6 @@
 <img width="300" height="300" alt="30" src="https://github.com/user-attachments/assets/6d262dbd-355e-4e82-b9de-b188cc5303d7" />
 </p>
 
-[![DOI](https://zenodo.org/badge/1138221786.svg)](https://doi.org/10.5281/zenodo.18485927)
-
 # Visualization-Based Automated Malware Classification: A Replication Study Extended with Temporal Dependencies
 
 Reliably and robustly detecting malware is a critical cornerstone of security.
